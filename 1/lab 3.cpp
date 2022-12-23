@@ -1,3 +1,5 @@
+Գաղտնագրում շաբլոնի մեթոդով։
+
 #include <iostream>
 using namespace std;
 string arr1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
