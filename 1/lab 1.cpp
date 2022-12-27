@@ -3,41 +3,41 @@
 #include<iostream>
 using namespace std;
 
-int gcd(int n, int m){
-    int i = 1, k;
-    if(n < 0)
-        n = -n;
-    if(m < 0)
-        m = -m;
-    if(n < m) {
-        while(i <= n) {
-            if(n % i == 0 && m % i == 0)
-                k = i;
+int gcd(int x, int y){
+    int i = 1, a;
+    if(x < 0)
+        x = -;
+    if(y < 0)
+        y = -y;
+    if(x < y) {
+        while(i <= x) {
+            if(x % i == 0 && y % i == 0)
+                a = i;
             i++;
         }
     }
     else {
-        while(i <= m) {
-            if(n % i == 0 && m % i == 0)
-                k = i;
+        while(i <= y) {
+            if(x % i == 0 && y % i == 0)
+                a = i;
             i++;
         }
     }
-    return k;
+    return a;
 }
 
-int lcm(int n, int m){
-    int k = gcd(n, m);
-    int p = n * m / k;
+int lcm(int x, int y){
+    int a = gcd(x, y);
+    int p = x * y / a;
     return p;
 }
 
 int main() {
-    int n, m;
-    cin >> n;
-    cin >> m;
-    // int k = gcd(n, m);
-    // cout << k;
-    cout << "GCD = " << gcd(n, m) << endl;
-    cout << "LMC = " << lcm(n, m);
+    int x, y;
+    cin >> x;
+    cin >> y;
+    // int a = gcd(x, y);
+    // cout << a;
+    cout << "GCD = " << gcd(x, y) << endl;
+    cout << "LMC = " << lcm(x, y);
 }
